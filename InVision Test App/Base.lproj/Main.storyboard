@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="InVision_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" User Email . . ." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-Yy-Cfh">
+                                <rect key="frame" x="27" y="154" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password . . ." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmY-IE-YxF">
+                                <rect key="frame" x="27" y="218" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owh-37-MPe">
+                                <rect key="frame" x="247" y="313" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0R-Zh-aud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZV-SV-6Uh">
+                                <rect key="frame" x="27" y="318" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="New here! Sign Up">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCS-Gb-1Qo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N89-np-SgQ">
+                                <rect key="frame" x="27" y="256" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="InVision Test App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-Ke-2HY">
+                                <rect key="frame" x="27" y="65" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLbl" destination="N89-np-SgQ" id="Zsc-35-NW8"/>
+                        <outlet property="userEmailField" destination="Eqa-Yy-Cfh" id="TmV-Zb-lT6"/>
+                        <outlet property="userPasswordField" destination="AmY-IE-YxF" id="kRi-qK-aTH"/>
+                        <segue destination="qAe-Zo-TCu" kind="show" identifier="loginVC" id="h7w-Cg-gf8"/>
+                        <segue destination="Z64-8t-zfH" kind="show" identifier="NewSignUp" id="4ij-Rb-KSZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Timeline-->
+        <scene sceneID="8wz-Ek-mmd">
+            <objects>
+                <viewController id="Qse-W6-FgI" customClass="TimelineVC" customModule="InVision_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xrj-5o-8kw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ByC-z7-GfL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ion-Re-KSo">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-KD-fGR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="K7I-ug-swf" customClass="TimelineCell" customModule="InVision_Test_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K7I-ug-swf" id="vIE-cW-rNl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g1L-qN-tCM">
+                                                    <rect key="frame" x="12" y="2" width="160" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="mnf-Vi-Mdr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-Gc-Dw7">
+                                                    <rect key="frame" x="186" y="2" width="177" height="95"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g1L-qN-tCM" firstAttribute="leading" secondItem="vIE-cW-rNl" secondAttribute="leading" constant="12" id="9ZO-eL-aga"/>
+                                                <constraint firstItem="CbR-Gc-Dw7" firstAttribute="top" secondItem="vIE-cW-rNl" secondAttribute="top" constant="2" id="GfK-ws-K0l"/>
+                                                <constraint firstItem="g1L-qN-tCM" firstAttribute="top" secondItem="vIE-cW-rNl" secondAttribute="top" constant="2" id="RoV-Ac-ah9"/>
+                                                <constraint firstAttribute="bottom" secondItem="CbR-Gc-Dw7" secondAttribute="bottom" constant="2.5" id="iyE-yc-6J7"/>
+                                                <constraint firstAttribute="trailing" secondItem="CbR-Gc-Dw7" secondAttribute="trailing" constant="12" id="oTj-is-CST"/>
+                                                <constraint firstItem="CbR-Gc-Dw7" firstAttribute="leading" secondItem="g1L-qN-tCM" secondAttribute="trailing" constant="14" id="qWg-Nf-Xwd"/>
+                                                <constraint firstItem="g1L-qN-tCM" firstAttribute="centerY" secondItem="vIE-cW-rNl" secondAttribute="centerY" id="yte-ie-5gc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImage" destination="g1L-qN-tCM" id="cye-zf-etq"/>
+                                            <outlet property="postText" destination="CbR-Gc-Dw7" id="goB-pk-Zz4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Nk-KD-fGR" secondAttribute="trailing" id="ie7-5E-Pa1"/>
+                            <constraint firstItem="ByC-z7-GfL" firstAttribute="top" secondItem="9Nk-KD-fGR" secondAttribute="bottom" id="mXy-te-SfF"/>
+                            <constraint firstItem="9Nk-KD-fGR" firstAttribute="leading" secondItem="ion-Re-KSo" secondAttribute="leading" id="rVq-Sf-9kH"/>
+                            <constraint firstItem="9Nk-KD-fGR" firstAttribute="top" secondItem="xrj-5o-8kw" secondAttribute="bottom" id="uDC-5Y-aFH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timeline" id="Uob-hp-cXi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QT2-9O-OyW">
+                            <connections>
+                                <action selector="addPostBtn:" destination="Qse-W6-FgI" id="sXV-6w-6vf"/>
+                                <segue destination="fmT-n9-Zt8" kind="show" identifier="AddPostVC" id="efP-Jf-nVL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="9Nk-KD-fGR" id="UiB-DS-E5I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2k-7D-saH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Add PostVC-->
+        <scene sceneID="7wF-og-JK8">
+            <objects>
+                <viewController id="fmT-n9-Zt8" customClass="AddPostVC" customModule="InVision_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lj2-Fz-ooM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5wv-fk-7YZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhv-H9-O56">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dg-3m-kmw">
+                                <rect key="frame" x="27" y="20" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="199-6Y-Y7Q">
+                                <rect key="frame" x="27" y="201" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P06-OG-jte">
+                                <rect key="frame" x="112" y="310" width="150" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Add Post">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="postAddedBtn:" destination="fmT-n9-Zt8" eventType="touchUpInside" id="X5S-3c-CBf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="newPostImage" destination="2dg-3m-kmw" id="v85-0M-JnD"/>
+                        <outlet property="newPostText" destination="199-6Y-Y7Q" id="lJK-37-kUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTD-L3-Cp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="oZi-Zo-gI2">
+            <objects>
+                <viewController id="Z64-8t-zfH" customClass="SignUpVC" customModule="InVision_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QiZ-q3-3OT"/>
+                        <viewControllerLayoutGuide type="bottom" id="5O1-en-HXv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLg-mp-Z2w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" User Email . . ." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fp5-ut-6cN">
+                                <rect key="frame" x="27" y="156" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password . . ." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="okF-W9-hQ8">
+                                <rect key="frame" x="27" y="220" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="InVision Test App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwo-IX-SQI">
+                                <rect key="frame" x="27" y="75" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xur-px-LCV">
+                                <rect key="frame" x="247" y="315" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="Z64-8t-zfH" eventType="touchUpInside" id="mso-Ae-sh3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg1-bg-ZJt">
+                                <rect key="frame" x="27" y="258" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLbl" destination="kg1-bg-ZJt" id="4XG-tQ-EDl"/>
+                        <outlet property="userEmailField" destination="Fp5-ut-6cN" id="tYr-YB-VKo"/>
+                        <outlet property="userPasswordField" destination="okF-W9-hQ8" id="AUS-3t-V2B"/>
+                        <segue destination="qAe-Zo-TCu" kind="show" identifier="SignUpVC" id="nMx-xM-sZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IxQ-kB-SL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="940"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GE3-gp-Gj2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qAe-Zo-TCu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="lPq-qr-G4f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qse-W6-FgI" kind="relationship" relationship="rootViewController" id="9AN-J5-jQE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Beo-3U-EZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nMx-xM-sZc"/>
+    </inferredMetricsTieBreakers>
+</document>
