@@ -16,9 +16,14 @@
 		4D91F56C1F2A2A7B0067C6C2 /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91F56B1F2A2A7B0067C6C2 /* TimelineVC.swift */; };
 		4D91F56E1F2A2A9D0067C6C2 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91F56D1F2A2A9D0067C6C2 /* AddPostVC.swift */; };
 		4D91F5701F2A2B000067C6C2 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91F56F1F2A2B000067C6C2 /* TimelineCell.swift */; };
+		4D91F5721F2A349F0067C6C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D91F5711F2A349F0067C6C2 /* GoogleService-Info.plist */; };
+		4DEB2AAE1F2B552800D69EF3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEB2AAD1F2B552800D69EF3 /* File.swift */; };
+		D4972CD8F7DB8BF4D86B83C3 /* Pods_InVision_Test_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9E49BCD37347A8DE803F73 /* Pods_InVision_Test_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0620D48EB9E06F7318EE4F89 /* Pods-InVision Test App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVision Test App.release.xcconfig"; path = "Pods/Target Support Files/Pods-InVision Test App/Pods-InVision Test App.release.xcconfig"; sourceTree = "<group>"; };
+		102DBA46D17D2D436221DCCE /* Pods-InVision Test App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVision Test App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InVision Test App/Pods-InVision Test App.debug.xcconfig"; sourceTree = "<group>"; };
 		4D91F5541F2A186A0067C6C2 /* InVision Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InVision Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D91F5571F2A186A0067C6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D91F5591F2A186A0067C6C2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		4D91F56B1F2A2A7B0067C6C2 /* TimelineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
 		4D91F56D1F2A2A9D0067C6C2 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 		4D91F56F1F2A2B000067C6C2 /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		4D91F5711F2A349F0067C6C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DEB2AAD1F2B552800D69EF3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BB9E49BCD37347A8DE803F73 /* Pods_InVision_Test_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InVision_Test_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4972CD8F7DB8BF4D86B83C3 /* Pods_InVision_Test_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8E1487D74FCA982A36F7B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				102DBA46D17D2D436221DCCE /* Pods-InVision Test App.debug.xcconfig */,
+				0620D48EB9E06F7318EE4F89 /* Pods-InVision Test App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4D91F54B1F2A186A0067C6C2 = {
 			isa = PBXGroup;
 			children = (
 				4D91F5561F2A186A0067C6C2 /* InVision Test App */,
 				4D91F5551F2A186A0067C6C2 /* Products */,
+				0B8E1487D74FCA982A36F7B0 /* Pods */,
+				A60067572A6AFC710BC15DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,12 +88,22 @@
 				4D91F56B1F2A2A7B0067C6C2 /* TimelineVC.swift */,
 				4D91F56D1F2A2A9D0067C6C2 /* AddPostVC.swift */,
 				4D91F56F1F2A2B000067C6C2 /* TimelineCell.swift */,
+				4DEB2AAD1F2B552800D69EF3 /* File.swift */,
 				4D91F55B1F2A186A0067C6C2 /* Main.storyboard */,
 				4D91F55E1F2A186A0067C6C2 /* Assets.xcassets */,
 				4D91F5601F2A186A0067C6C2 /* LaunchScreen.storyboard */,
 				4D91F5631F2A186A0067C6C2 /* Info.plist */,
+				4D91F5711F2A349F0067C6C2 /* GoogleService-Info.plist */,
 			);
 			path = "InVision Test App";
+			sourceTree = "<group>";
+		};
+		A60067572A6AFC710BC15DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9E49BCD37347A8DE803F73 /* Pods_InVision_Test_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D91F5661F2A186A0067C6C2 /* Build configuration list for PBXNativeTarget "InVision Test App" */;
 			buildPhases = (
+				0247793265C6ABBA8CF36190 /* [CP] Check Pods Manifest.lock */,
 				4D91F5501F2A186A0067C6C2 /* Sources */,
 				4D91F5511F2A186A0067C6C2 /* Frameworks */,
 				4D91F5521F2A186A0067C6C2 /* Resources */,
+				868429D8F89EF8FA18FA6085 /* [CP] Embed Pods Frameworks */,
+				7BB82BC9960E78777C1F99D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +170,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D91F5621F2A186A0067C6C2 /* LaunchScreen.storyboard in Resources */,
+				4D91F5721F2A349F0067C6C2 /* GoogleService-Info.plist in Resources */,
 				4D91F55F1F2A186A0067C6C2 /* Assets.xcassets in Resources */,
 				4D91F55D1F2A186A0067C6C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0247793265C6ABBA8CF36190 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB82BC9960E78777C1F99D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InVision Test App/Pods-InVision Test App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868429D8F89EF8FA18FA6085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InVision Test App/Pods-InVision Test App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D91F5501F2A186A0067C6C2 /* Sources */ = {
@@ -151,6 +233,7 @@
 			files = (
 				4D91F5701F2A2B000067C6C2 /* TimelineCell.swift in Sources */,
 				4D91F55A1F2A186A0067C6C2 /* LoginVC.swift in Sources */,
+				4DEB2AAE1F2B552800D69EF3 /* File.swift in Sources */,
 				4D91F56A1F2A1E4A0067C6C2 /* SignUpVC.swift in Sources */,
 				4D91F56E1F2A2A9D0067C6C2 /* AddPostVC.swift in Sources */,
 				4D91F5581F2A186A0067C6C2 /* AppDelegate.swift in Sources */,
@@ -275,6 +358,7 @@
 		};
 		4D91F5671F2A186A0067C6C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102DBA46D17D2D436221DCCE /* Pods-InVision Test App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BFW29W59H3;
@@ -288,6 +372,7 @@
 		};
 		4D91F5681F2A186A0067C6C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0620D48EB9E06F7318EE4F89 /* Pods-InVision Test App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BFW29W59H3;
@@ -318,6 +403,7 @@
 				4D91F5681F2A186A0067C6C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

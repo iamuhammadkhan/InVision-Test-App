@@ -14,15 +14,9 @@ class TimelineCell: UITableViewCell {
     
     @IBOutlet weak var postText: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setPost (newPost: Posts) {
+        
+        self.postImage.image = newPost.image
+        self.postText.text = newPost.post
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

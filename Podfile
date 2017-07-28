@@ -6,5 +6,8 @@ target 'InVision Test App' do
   use_frameworks!
 
   # Pods for InVision Test App
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 end

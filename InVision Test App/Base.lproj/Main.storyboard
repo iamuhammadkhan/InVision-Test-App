@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Timeline-->
+        <!--TimelineVC-->
         <scene sceneID="8wz-Ek-mmd">
             <objects>
                 <viewController id="Qse-W6-FgI" customClass="TimelineVC" customModule="InVision_Test_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,11 +96,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ByC-z7-GfL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ion-Re-KSo">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-KD-fGR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="K7I-ug-swf" customClass="TimelineCell" customModule="InVision_Test_App" customModuleProvider="target">
@@ -139,6 +139,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qse-W6-FgI" id="MTQ-o5-yg4"/>
+                                    <outlet property="delegate" destination="Qse-W6-FgI" id="2qZ-XK-5vw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,8 +153,15 @@
                             <constraint firstItem="9Nk-KD-fGR" firstAttribute="top" secondItem="xrj-5o-8kw" secondAttribute="bottom" id="uDC-5Y-aFH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Timeline" id="Uob-hp-cXi">
+                    <navigationItem key="navigationItem" id="Uob-hp-cXi">
+                        <barButtonItem key="leftBarButtonItem" title="Signout" id="LMs-EJ-t5H">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="signoutBtn:" destination="Qse-W6-FgI" id="JwK-Qa-7fy"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QT2-9O-OyW">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="addPostBtn:" destination="Qse-W6-FgI" id="sXV-6w-6vf"/>
                                 <segue destination="fmT-n9-Zt8" kind="show" identifier="AddPostVC" id="efP-Jf-nVL"/>
@@ -174,14 +185,14 @@
                         <viewControllerLayoutGuide type="bottom" id="5wv-fk-7YZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dhv-H9-O56">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dg-3m-kmw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="2dg-3m-kmw">
                                 <rect key="frame" x="27" y="20" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="199-6Y-Y7Q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="199-6Y-Y7Q">
                                 <rect key="frame" x="27" y="201" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -200,12 +211,20 @@
                                     <action selector="postAddedBtn:" destination="fmT-n9-Zt8" eventType="touchUpInside" id="X5S-3c-CBf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD9-8u-lAn">
+                                <rect key="frame" x="27" y="20" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="addImage:" destination="fmT-n9-Zt8" eventType="touchUpInside" id="DnB-8W-baO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="newPostImage" destination="2dg-3m-kmw" id="v85-0M-JnD"/>
                         <outlet property="newPostText" destination="199-6Y-Y7Q" id="lJK-37-kUT"/>
+                        <segue destination="Qse-W6-FgI" kind="show" identifier="update" id="mFu-LB-Im2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTD-L3-Cp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,7 +302,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qAe-Zo-TCu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="lPq-qr-G4f">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="lPq-qr-G4f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.93725490199999995" green="0.27450980390000002" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -298,7 +317,11 @@
             <point key="canvasLocation" x="966" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="test" width="1024" height="1024"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nMx-xM-sZc"/>
+        <segue reference="mFu-LB-Im2"/>
     </inferredMetricsTieBreakers>
 </document>
